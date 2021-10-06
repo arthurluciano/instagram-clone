@@ -1,0 +1,67 @@
+.page-header {
+  height: 54px;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid transparent;
+
+  border-bottom-color: #DBDBDB;
+
+  .nav-container {
+    height: 100%;
+    width: 100%;
+    max-width: 975px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navigation ul {
+      list-style: none;
+
+      display: flex;
+      column-gap: 12px;
+
+      li svg {
+        height: 22px;
+        width: 22px;
+
+        cursor: pointer;
+      }
+    }
+  }
+
+  .search-field {
+    height: 28px;
+    width: 215px;
+
+    background: var(--secondary-color);
+
+    input {
+      padding: 7px;
+
+      height: 100%;
+      width: 100%;
+
+      background: transparent;
+      border: none;
+
+      &::placeholder {
+        color: var(--search-text-color);
+        font-weight: 300;
+        text-align: center;
+      }
+
+      &:focus-within {
+        outline: none;
+
+        &::placeholder {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
