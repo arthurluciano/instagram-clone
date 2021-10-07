@@ -3,11 +3,9 @@ import avatar from "../../assets/avatar.jpg";
 import postImage from "../../assets/post-image-example.jpg";
 import { GrHomeRounded } from "react-icons/gr";
 import { BiPaperPlane, BiSearch } from "react-icons/bi";
-import { FiMoreHorizontal } from "react-icons/fi";
-import { FaRegComment } from "react-icons/fa";
-import { BsBookmark } from "react-icons/bs";
 import { AiOutlineCompass, AiOutlineHeart } from "react-icons/ai";
 import "./styles.scss";
+import { Post } from "./components/Post";
 
 export const Home: React.FC = () => {
   return (
@@ -63,44 +61,7 @@ export const Home: React.FC = () => {
             </div>
           </section>
 
-          <article className="post-container">
-            <section className="post-header">
-              <div className="user-post">
-                <img src={avatar} alt="Foto do usuário" />
-                <span>Arthur Oliveira</span>
-              </div>
-
-              <FiMoreHorizontal />
-            </section>
-            <div className="post-image">
-              <img src={postImage} alt="Foto do post" />
-            </div>
-            <section className="post-buttons">
-              <div className="action-buttons">
-                <button className="button like">
-                  <AiOutlineHeart />
-                </button>
-
-                <button className="button comment">
-                  <FaRegComment />
-                </button>
-
-                <button className="button share">
-                  <BiPaperPlane />
-                </button>
-              </div>
-              <button className="save-post">
-                <BsBookmark />
-              </button>
-            </section>
-            <section className="post-feedback">
-              <img src={avatar} alt="Foto do usuário" />
-              <span className="post-users-feedback">
-                Curtido por <span>gustavoalexandre</span> e{" "}
-                <span>outras 49 pessoas</span>
-              </span>
-            </section>
-          </article>
+         <Post username="Zika" postImage={postImage}/>
         </div>
         {/* <section className="recommended">
           
