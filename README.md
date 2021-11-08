@@ -9,7 +9,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [MySQL](https://www.mysql.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-<br />
 
 ## 🚀 Introdução
 
@@ -30,8 +29,6 @@ $ yarn
 # Inicie o projeto
 $ yarn dev
 ```
-
-<br />
 
 Após essas etapas, você pode acessar [`http://localhost:3000/`](http://localhost:3000/) no seu navegador.
 
