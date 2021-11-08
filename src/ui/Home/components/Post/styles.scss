@@ -220,9 +220,14 @@
       .button-submit {
         background: none;
         border: none;
-        color: #0095f6;
+        color: var(--button-color);
         font-weight: 600;
         cursor: pointer;
+
+        &:disabled {
+          cursor: default;
+          color: #BAE2FC
+        }
       }
     }
   }
