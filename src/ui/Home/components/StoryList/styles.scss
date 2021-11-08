@@ -1,0 +1,64 @@
+.stories-container {
+  position: relative;
+
+  height: 118px;
+  width: 100%;
+  max-width: 614px;
+
+  background: var(--primary-color);
+
+  border: 1px solid var(--border-color);
+
+  padding: 16px 16px;
+
+  z-index: 1;
+
+  .story-button {
+    position: absolute;
+    top: 40%;
+
+    background: #fff;
+    border: none;
+    cursor: pointer;
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.288);
+
+    border-radius: 50%;
+
+    height: 24px;
+    width: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.disable {
+      display: none;
+    }
+
+    &.back {
+      left: 12px;
+    }
+
+    &.next {
+      right: 12px;
+    }
+  }
+
+  .stories-list-area {
+    width: 100%;
+
+    overflow-x: hidden;
+
+    .stories-list {
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+
+      column-gap: 12px;
+
+      transition: 0.5s all;
+    }
+  }
+}
