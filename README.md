@@ -6,7 +6,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Vite](https://vitejs.dev/)
 - [React](https://reactjs.org)
-- [MySQL](https://www.mysql.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 
 
