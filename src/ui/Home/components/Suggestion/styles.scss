@@ -5,7 +5,7 @@
 
   width: 100%;
 
-  padding: 4px 8px;
+  padding: 4px 0;
 
   .user-suggestion {
     display: flex;
@@ -40,6 +40,7 @@
       }
 
       > span {
+        margin-top: 1px;
         font-size: 12px;
         color: var(--search-text-color);
       }

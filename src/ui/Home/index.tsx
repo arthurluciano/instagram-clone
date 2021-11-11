@@ -40,7 +40,6 @@ export const Home: React.FC = () => {
           <div className="search-field">
             <input type="text" placeholder="Pesquisar" />
             <div className="recent-container">
-              
               <div className="recent-list">
                 <div className="title">
                   <strong>Recentes</strong>
@@ -54,7 +53,7 @@ export const Home: React.FC = () => {
                       <span>{user.displayName}</span>
                     </div>
                     <button className="button-remove">
-                      <BsXLg fill="#8e8e8e"/>
+                      <BsXLg fill="#8e8e8e" size={14} />
                     </button>
                   </div>
                 ))}
@@ -104,7 +103,7 @@ export const Home: React.FC = () => {
         </div>
         <section
           className="recommended"
-          style={{ left: `${(windowWidth - 961) / 2 + 630}px` }}
+          style={{ left: `${(windowWidth - 935) / 2 + 634}px` }}
         >
           <div className="user">
             <div className="user-details">
